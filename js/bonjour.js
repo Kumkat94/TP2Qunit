@@ -1,3 +1,3 @@
 module.exports = function (name) {
-    return 'Bonjour ' + name;
+    return 'Coucou ' + name;
 }
