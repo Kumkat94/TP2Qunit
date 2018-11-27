@@ -1,0 +1,1 @@
+module.exports=function(o){return"Bonjour "+o},module.exports=function(o){return o/2==Math.round(o/2)};
