@@ -23,6 +23,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.registerTask("default", ["uglify","watch"])
+    grunt.registerTask("mocha", ["uglify"])
   };
 
   
