@@ -1,5 +1,6 @@
 var paire = require ("../js/paire");
 var bjr = require ("../js/bonjour");
+var secu = require ("../js/secu");
 var assert = require("assert");
 
 describe('Array', function() {
@@ -41,7 +42,18 @@ describe('Bonjour', function() {
     it('should return "Bonjour Jean" ', function() {
         assert.strictEqual(bjr("Jean"),"Bonjour Jean");
     });
+
 });
 
+describe('Secu', function() {
+    
+    it('should return true, good number ', function() {
+        assert.strictEqual(secu("294115439535147"),true);
+    });
+    it('should return false, fake number ', function() {
+        assert.strictEqual(secu("198115439535147"),false);
+    });
+    
+});
 
 

@@ -8,9 +8,21 @@ module.exports = function(grunt) {
           dest: "dist/built.js",
         },
       },
+
+      watch: {
+        scripts: {
+          files: 'js/*.js', // tous les fichiers JavaScript de n'importe quel dossier
+          tasks: ['uglify']
+        },
+      }
+
     });
+
+    
+
     grunt.loadNpmTasks("grunt-contrib-uglify");
-    grunt.registerTask("default","uglify")
+    grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.registerTask("default", ["uglify","watch"])
   };
 
   
